@@ -7,6 +7,7 @@
 
 body{
     max-width: 1300px;
+    min-width: fit-content;
     margin: auto;
     background-color: rgb(238, 245, 210);
 }
@@ -18,13 +19,16 @@ body{
 }
 
 .container{
-    
     width: 240px;
     height: 300px;
     margin: auto;
     margin-top: 100px;
+    z-index: 1;
+    transform-origin: left ;
+    transition-duration: 1s;
 }
-.firstpage{
+
+.firstpagebackface{
     position: absolute;
     width: 240px;
     height: 300px;
@@ -37,28 +41,50 @@ body{
     transition-duration: 3s;
     box-shadow: 5px 10px 10px gray;
 }
-.firstpage:hover{ 
-    color: aqua;
-    transform: rotateY(180deg);
+.firstpage{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    padding-top: 30px;
+    border: 2px solid black;
+    color: black;
+    background-color: aqua;
+    z-index: 1;
+    transform-origin: left;
+    transition-duration: 3s;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 10px gray;
 }
 
 .secondpage{
+    position: absolute;
     width: 240px;
     height: 300px;
     padding-top: 30px;
     margin: auto;
     border: 2px solid black;
     color: rgb(15, 15, 15);
-    background-color: rgb(206, 241, 77);
+    background-color: rgb(150, 228, 241);
+    z-index: 1;
+    transform-origin: left ;
+    transition-duration: 3s;
+    backface-visibility: hidden;
+    box-shadow: 5px 10px 10px gray;
+}
+
+.secondpagebackface{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    padding-top: 30px;
+    margin: auto;
+    border: 2px solid black;
+    color: rgb(15, 15, 15);
+    background-color: rgb(150, 228, 241);
     z-index: 1;
     transform-origin: left ;
     transition-duration: 3s;
     box-shadow: 5px 10px 10px gray;
-}
-
-.secondpage:hover{
-  color: rgb(206, 241, 77);
-  transform: rotateY(-180deg);
 }
 .card-heading{
     font-size: 30px;
@@ -71,6 +97,7 @@ body{
     font-size: 20px;
     max-width: 200px;
     margin: auto;
+    color: darkblue;
     margin-bottom: 40px;
     text-align: center;
     background-color: none;
@@ -83,8 +110,25 @@ body{
 }
 
 #button1{
-    padding: 2px;
+    padding: 7px;
     border-radius: 3px;
     border: 0px;
-    background-color: aqua;
+    background-color: aquamarine;
+}
+
+#button2{
+    padding: 7px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: aquamarine;
+}
+
+
+#button3{
+    padding: 10px;
+    margin-top: 140px;
+    margin-left: 50px;
+    border-radius: 3px;
+    border: 0px;
+    background-color: aquamarine;
 }

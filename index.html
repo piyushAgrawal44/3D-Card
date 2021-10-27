@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <title>3D greeting card animation</title>
 </head>
-<body>
+<body id="body">
     <h1 class="heading">3D greeting card</h1>
 
-    <div class="container">
-        <div class="firstpage">
+    <div class="container" id="container">
+        <div class="secondpagebackface" id="secondpagebackface">
+             
+        </div>
+        <div class="secondpage" id="secondpage">
+            <div class="card-heading">
+                welcome
+            </div>
+    
+            <div class="card-body">
+                This is the second page of the card
+            </div>
+            <div class="card-bottom">
+                <button class="button" id="button2" onclick="aayush()">Close card</button>
+            </div>
+        </div>
+
+        <div class="firstpagebackface" id="firstpagebackface">
+        </div>
+        <div class="firstpage" id="firstpage">
         <div class="card-heading">
             welcome
         </div>
@@ -20,26 +38,16 @@
             This the first page of the card
         </div>
         <div class="card-bottom">
-           Next Page
+           <button class="button" id="button1" onclick="piyush()">Next page</button>
         </div>
          </div>
-
-
-        <div class="secondpage">
-            <div class="card-heading">
-                welcome
-            </div>
-    
-            <div class="card-body">
-                This the first page of the card
-            </div>
-            <div class="card-bottom">
-               Next Page
-            </div>
-        </div>
+        
+      
+        <button id="button3" onclick="gotofront()">Go to front page</button>
     </div>
-   
 
-    <script src="index.js"></script>
+    <script src="index.js">
+
+    </script>
 </body>
 </html>
