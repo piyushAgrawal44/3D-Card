@@ -6,13 +6,10 @@
 }
 
 body{
+    width: fit-content;
     max-width: 1300px;
     margin: auto;
     background-color: rgb(238, 245, 210);
-}
-
-.main{
-    width: fit-content;
 }
 
 .heading{
