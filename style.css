@@ -6,8 +6,8 @@
 }
 
 body{
-    width: 600px;
     max-width: 1300px;
+    overflow: auto;
     margin: auto;
     background-color: rgb(238, 245, 210);
 }
