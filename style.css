@@ -7,7 +7,7 @@
 
 body{
     max-width: 1300px;
-    min-width: fit-content;
+    min-width: 600px;
     margin: auto;
     background-color: rgb(238, 245, 210);
 }
