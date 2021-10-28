@@ -6,9 +6,10 @@
 }
 
 body{
-    min-width: 700px;
     max-width: 1300px;
+    min-width: 700px;
     margin: auto;
+    overflow: auto;
     background-color: rgb(238, 245, 210);
 }
 
