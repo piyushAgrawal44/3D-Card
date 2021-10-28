@@ -6,8 +6,8 @@
 }
 
 body{
+    width: fit-content;
     max-width: 1300px;
-    overflow: auto;
     margin: auto;
     background-color: rgb(238, 245, 210);
 }
@@ -28,19 +28,6 @@ body{
     transition-duration: 1s;
 }
 
-.firstpagebackface{
-    position: absolute;
-    width: 240px;
-    height: 300px;
-    padding-top: 30px;
-    border: 2px solid black;
-    color: black;
-    background-color: aqua;
-    z-index: 1;
-    transform-origin: left;
-    transition-duration: 3s;
-    box-shadow: 5px 10px 10px gray;
-}
 .firstpage{
     position: absolute;
     width: 240px;
@@ -48,11 +35,27 @@ body{
     padding-top: 30px;
     border: 2px solid black;
     color: black;
-    background-color: aqua;
+    background-color: rgb(231, 70, 70);
     z-index: 1;
     transform-origin: left;
     transition-duration: 3s;
     backface-visibility: hidden;
+    box-shadow: 5px 10px 10px gray;
+}
+
+
+
+.firstpagebackface{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+    padding-top: 30px;
+    border: 2px solid black;
+    color: black;
+    background-color: rgb(230, 70, 70);
+    z-index: 1;
+    transform-origin: left;
+    transition-duration: 3s;
     box-shadow: 5px 10px 10px gray;
 }
 
@@ -64,7 +67,7 @@ body{
     margin: auto;
     border: 2px solid black;
     color: rgb(15, 15, 15);
-    background-color: rgb(150, 228, 241);
+    background-color: yellow;
     z-index: 1;
     transform-origin: left ;
     transition-duration: 3s;
@@ -80,7 +83,7 @@ body{
     margin: auto;
     border: 2px solid black;
     color: rgb(15, 15, 15);
-    background-color: rgb(150, 228, 241);
+    background-color: yellow;
     z-index: 1;
     transform-origin: left ;
     transition-duration: 3s;
@@ -110,14 +113,14 @@ body{
 }
 
 #button1{
-    padding: 7px;
+    padding: 10px;
     border-radius: 3px;
     border: 0px;
     background-color: aquamarine;
 }
 
 #button2{
-    padding: 7px;
+    padding: 10px;
     border-radius: 3px;
     border: 0px;
     background-color: aquamarine;

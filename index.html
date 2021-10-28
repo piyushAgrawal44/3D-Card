@@ -12,9 +12,14 @@
         <h1 class="heading">3D greeting card</h1>
 
     <div class="container" id="container">
-        <div class="secondpagebackface" id="secondpagebackface">
+
+        <!-- back face of second page -->
+        <button onclick="undo2()" class="secondpagebackface" id="secondpagebackface">
              
-        </div>
+        </button>
+        <!-- back face of second page end -->
+
+        <!-- second page -->
         <div class="secondpage" id="secondpage">
             <div class="card-heading">
                 welcome
@@ -24,24 +29,30 @@
                 This is the second page of the card
             </div>
             <div class="card-bottom">
-                <button class="button" id="button2" onclick="aayush()">Close card</button>
+                <button class="button" id="button2" onclick="lastpage()">Next page</button>
             </div>
         </div>
+        <!-- second page end -->
 
-        <div class="firstpagebackface" id="firstpagebackface">
-        </div>
+        <!-- back face of fist page -->
+        <button onclick="undo1()" class="firstpagebackface" id="firstpagebackface">
+
+        </button>
+         <!-- back face of fist page end -->
+
+        <!-- first page -->
         <div class="firstpage" id="firstpage">
         <div class="card-heading">
             welcome
         </div>
         <div class="card-body">
-            This the first page of the card
+            This is the first page of the card
         </div>
         <div class="card-bottom">
-           <button class="button" id="button1" onclick="piyush()">Next page</button>
+           <button class="button" id="button1" onclick="secondpage()">Next page</button>
         </div>
         </div>
-        
+        <!-- first apge end -->
       
         <button id="button3" onclick="gotofront()">Go to front page</button>
     </div>
